@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3745dbf82e82cdce7d12f4207738be76",
+    "content-hash": "e0acc079e63fd7e07a3331fefc5faf5b",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -158,16 +158,16 @@
         },
         {
             "name": "phpzm/core",
-            "version": "0.0.8",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpzm/core.git",
-                "reference": "b3661f035d969a966d80ada08f5c11e6ae0a623d"
+                "reference": "963d38072f4941ee5a6e2246439cfede19be8244"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpzm/core/zipball/b3661f035d969a966d80ada08f5c11e6ae0a623d",
-                "reference": "b3661f035d969a966d80ada08f5c11e6ae0a623d",
+                "url": "https://api.github.com/repos/phpzm/core/zipball/963d38072f4941ee5a6e2246439cfede19be8244",
+                "reference": "963d38072f4941ee5a6e2246439cfede19be8244",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +206,7 @@
                 "php",
                 "simples"
             ],
-            "time": "2017-02-06T12:43:09+00:00"
+            "time": "2017-02-08T15:34:08+00:00"
         },
         {
             "name": "psr/http-message",
