@@ -5,7 +5,7 @@
 ?>
 <html>
   <head>
-    <title><?php $this->out(config('app.name')); ?></title>
+    <title><?php out(config('app.name')); ?></title>
   </head>
   <body>
     <div style="text-align: center;">

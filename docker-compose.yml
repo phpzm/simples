@@ -7,7 +7,7 @@ services:
     image: ambientum/mysql:5.7
     container_name: mysql-simples
     volumes:
-      - ./storage/mysql:/var/lib/mysql
+      - ./.docker/mysql:/var/lib/mysql
     ports:
       - "4000:3306"
     environment:

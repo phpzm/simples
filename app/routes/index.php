@@ -1,8 +1,7 @@
 <?php
 
-use Simples\Core\Route\Router;
 use Simples\Core\Kernel\HttpHandler;
-use Simples\Core\Message\Lang;
+use Simples\Core\Route\Router;
 
 /**
  * @param Router $router

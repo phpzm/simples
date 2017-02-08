@@ -3,16 +3,13 @@
 /nbproject
 /.dev
 /.docs
-/.docker/data
-/.docker/log
 /storage/*
 /vendor
 
 # files
 .env
 *.cache
+*.log
 
 # reverse
-!/storage/database.sql
-!/storage/endpoints.json
 !*.gitkeep
