@@ -1,0 +1,27 @@
+# v2 syntax
+version: '2'
+
+services:
+
+  mysql-simples:
+    image: ambientum/mysql:5.7
+    container_name: mysql-simples
+    volumes:
+      - ./storage/mysql:/var/lib/mysql
+    ports:
+      - "4000:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=simples
+      - MYSQL_DATABASE=simples
+      - MYSQL_USER=simples
+      - MYSQL_PASSWORD=simples
+
+  apache-simples:
+    image: ambientum/php:7.0-apache
+    container_name: apache-simples
+    volumes:
+      - .:/var/www/app
+    ports:
+      - "4010:8080"
+    links:
+      - mysql-simples

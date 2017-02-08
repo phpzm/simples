@@ -1,15 +1,18 @@
-vendor/
-node_modules/
+# directories
+/.idea
+/nbproject
+/.dev
+/.docs
+/.docker/data
+/.docker/log
+/storage/*
+/vendor
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-bootstrap/cache/
-.env.*.php
-.env.php
+# files
 .env
+*.cache
 
-# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
-.rocketeer/
+# reverse
+!/storage/database.sql
+!/storage/endpoints.json
+!*.gitkeep

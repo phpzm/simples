@@ -1,0 +1,16 @@
+#!/usr/bin/php -q
+<?php
+
+require_once 'vendor/autoload.php';
+
+use Simples\Core\Kernel\App;
+
+$service = off($argv, 1, '');
+
+if (!$service) {
+  $service = 'help';
+}
+
+$app = new App(['root' => __DIR__]);
+
+$app->cli($service);
