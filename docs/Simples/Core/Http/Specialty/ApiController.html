@@ -1,0 +1,3617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Simples\Core\Http\Specialty\ApiController | Simples</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Simples_Core_Http_Specialty_ApiController" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Simples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Simples.html">Simples</a></li>
+                                        <li><a href="../../../../Simples/Core.html">Core</a></li>
+                                        <li><a href="../../../../Simples/Core/Http.html">Http</a></li>
+                                        <li><a href="../../../../Simples/Core/Http/Specialty.html">Specialty</a></li>
+    
+                <li>ApiController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ApiController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ApiController</strong>        extends <a href="../../../../Simples/Core/Http/Controller.html"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a>        (<a href="https://github.com/phpzm/core/blob/master/src/Http/Specialty/ApiController.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class ApiController</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_repository">
+                                        protected                                        <a href="../../../../Simples/Core/Model/Repository/ModelRepository.html"><abbr title="Simples\Core\Model\Repository\ModelRepository">ModelRepository</abbr></a>
+                </td>
+                <td>$repository</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Simples\Core\Http\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___invoke">__invoke</a>(<a href="../../../../Simples/Core/Http/Request.html"><abbr title="Simples\Core\Http\Request">Request</abbr></a> $request, <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a> $response, <a href="../../../../Simples/Core/Route/Match.html"><abbr title="Simples\Core\Route\Match">Match</abbr></a> $match)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method___invoke"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answer">answer</a>(null $content = null, array $meta = [], int $code = 200)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Request.html"><abbr title="Simples\Core\Http\Request">Request</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_request">request</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_request"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_response">response</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_response"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Route/Match.html"><abbr title="Simples\Core\Route\Match">Match</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_match">match</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_match"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_input">input</a>($name, $type = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_input"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLog">setLog</a>($logging)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_setLog"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>($name, $arguments)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method___call"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerContinue">answerContinue</a>($data = null, $meta = [])
+        
+                                            <p>// 100</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerContinue"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerProcessing">answerProcessing</a>($data = null, $meta = [])
+        
+                                            <p>// 102</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerProcessing"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerOK">answerOK</a>($data = null, $meta = [])
+        
+                                            <p>// 200</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerOK"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerCreated">answerCreated</a>($data = null, $meta = [])
+        
+                                            <p>// 201</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerCreated"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerAccepted">answerAccepted</a>($data = null, $meta = [])
+        
+                                            <p>//  202</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerAccepted"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNonAuthoritativeInformation">answerNonAuthoritativeInformation</a>($data = null, $meta = [])
+        
+                                            <p>// 203</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNonAuthoritativeInformation"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNoContent">answerNoContent</a>($data = null, $meta = [])
+        
+                                            <p>// 204</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNoContent"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerResetContent">answerResetContent</a>($data = null, $meta = [])
+        
+                                            <p>// 205</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerResetContent"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerPartialContent">answerPartialContent</a>($data = null, $meta = [])
+        
+                                            <p>// 206</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerPartialContent"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerMultiStatus">answerMultiStatus</a>($data = null, $meta = [])
+        
+                                            <p>// 207</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerMultiStatus"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerAlreadyReported">answerAlreadyReported</a>($data = null, $meta = [])
+        
+                                            <p>// 208</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerAlreadyReported"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerFound">answerFound</a>($data = null, $meta = [])
+        
+                                            <p>// 302</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerFound"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerSeeOther">answerSeeOther</a>($data = null, $meta = [])
+        
+                                            <p>// 303</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerSeeOther"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNotModified">answerNotModified</a>($data = null, $meta = [])
+        
+                                            <p>// 304</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNotModified"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerUseProxy">answerUseProxy</a>($data = null, $meta = [])
+        
+                                            <p>// 305</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerUseProxy"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerTemporaryRedirect">answerTemporaryRedirect</a>($data = null, $meta = [])
+        
+                                            <p>// 307</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerTemporaryRedirect"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerBadRequest">answerBadRequest</a>($data = null, $meta = [])
+        
+                                            <p>// 400</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerBadRequest"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerUnauthorized">answerUnauthorized</a>($data = null, $meta = [])
+        
+                                            <p>// 401</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerUnauthorized"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerPaymentRequired">answerPaymentRequired</a>($data = null, $meta = [])
+        
+                                            <p>// 402</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerPaymentRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerForbidden">answerForbidden</a>($data = null, $meta = [])
+        
+                                            <p>// 403</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerForbidden"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNotFound">answerNotFound</a>($data = null, $meta = [])
+        
+                                            <p>// 404</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNotFound"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerMethodNotAllowed">answerMethodNotAllowed</a>($data = null, $meta = [])
+        
+                                            <p>// 405</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerMethodNotAllowed"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNotAcceptable">answerNotAcceptable</a>($data = null, $meta = [])
+        
+                                            <p>// 406</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNotAcceptable"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerProxyAuthenticationRequired">answerProxyAuthenticationRequired</a>($data = null, $meta = [])
+        
+                                            <p>// 407</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerProxyAuthenticationRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerRequestTimeout">answerRequestTimeout</a>($data = null, $meta = [])
+        
+                                            <p>// 408</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestTimeout"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerConflict">answerConflict</a>($data = null, $meta = [])
+        
+                                            <p>// 409</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerConflict"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerGone">answerGone</a>($data = null, $meta = [])
+        
+                                            <p>// 410</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerGone"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerLengthRequired">answerLengthRequired</a>($data = null, $meta = [])
+        
+                                            <p>// 411</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerLengthRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerPreconditionFailed">answerPreconditionFailed</a>($data = null, $meta = [])
+        
+                                            <p>// 412</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerPreconditionFailed"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerRequestEntityTooLarge">answerRequestEntityTooLarge</a>($data = null, $meta = [])
+        
+                                            <p>// 413</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestEntityTooLarge"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerRequestURITooLarge">answerRequestURITooLarge</a>($data = null, $meta = [])
+        
+                                            <p>// 414</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestURITooLarge"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerUnsupportedMediaType">answerUnsupportedMediaType</a>($data = null, $meta = [])
+        
+                                            <p>// 415</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerUnsupportedMediaType"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerRequestedRangeNotSatisfiable">answerRequestedRangeNotSatisfiable</a>($data = null, $meta = [])
+        
+                                            <p>// 416</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestedRangeNotSatisfiable"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerExpectationFailed">answerExpectationFailed</a>($data = null, $meta = [])
+        
+                                            <p>// 417</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerExpectationFailed"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerIAmATeapot">answerIAmATeapot</a>($data = null, $meta = [])
+        
+                                            <p>// 418</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerIAmATeapot"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNotProcessableEntity">answerNotProcessableEntity</a>($data = null, $meta = [])
+        
+                                            <p>// 422</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNotProcessableEntity"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerLocked">answerLocked</a>($data = null, $meta = [])
+        
+                                            <p>// 423</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerLocked"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerFailedDependency">answerFailedDependency</a>($data = null, $meta = [])
+        
+                                            <p>// 424</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerFailedDependency"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerUnorderedCollection">answerUnorderedCollection</a>($data = null, $meta = [])
+        
+                                            <p>// 425</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerUnorderedCollection"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerUpgradeRequired">answerUpgradeRequired</a>($data = null, $meta = [])
+        
+                                            <p>// 426</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerUpgradeRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerPreconditionRequired">answerPreconditionRequired</a>($data = null, $meta = [])
+        
+                                            <p>// 428</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerPreconditionRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerTooManyRequests">answerTooManyRequests</a>($data = null, $meta = [])
+        
+                                            <p>// 429</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerTooManyRequests"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerRequestHeaderFieldsTooLarge">answerRequestHeaderFieldsTooLarge</a>($data = null, $meta = [])
+        
+                                            <p>// 431</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestHeaderFieldsTooLarge"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerInternalServerErro">answerInternalServerErro</a>($data = null, $meta = [])
+        
+                                            <p>// 500</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerInternalServerErro"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNotImplemented">answerNotImplemented</a>($data = null, $meta = [])
+        
+                                            <p>// 501</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNotImplemented"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerBadGateway">answerBadGateway</a>($data = null, $meta = [])
+        
+                                            <p>// 502</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerBadGateway"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerServiceUnavailable">answerServiceUnavailable</a>($data = null, $meta = [])
+        
+                                            <p>// 503</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerServiceUnavailable"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerGatewayTimeout">answerGatewayTimeout</a>($data = null, $meta = [])
+        
+                                            <p>// 504</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerGatewayTimeout"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerHTTPVersionNotSupported">answerHTTPVersionNotSupported</a>($data = null, $meta = [])
+        
+                                            <p>// 505</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerHTTPVersionNotSupported"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerVariantAlsoNegotiates">answerVariantAlsoNegotiates</a>($data = null, $meta = [])
+        
+                                            <p>// 506</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerVariantAlsoNegotiates"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerInsufficientStorage">answerInsufficientStorage</a>($data = null, $meta = [])
+        
+                                            <p>// 507</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerInsufficientStorage"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerLoopDetected">answerLoopDetected</a>($data = null, $meta = [])
+        
+                                            <p>// 508</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerLoopDetected"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_answerNetworkAuthenticationRequired">answerNetworkAuthenticationRequired</a>($data = null, $meta = [])
+        
+                                            <p>// 511</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Http/Controller.html#method_answerNetworkAuthenticationRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_post">post</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>($id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_put">put</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___invoke">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method___invoke"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L96">line 96</a></div>
+        <code>                    <abbr title="Simples\Core\Http\$this">$this</abbr>
+    <strong>__invoke</strong>(<a href="../../../../Simples/Core/Http/Request.html"><abbr title="Simples\Core\Http\Request">Request</abbr></a> $request, <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a> $response, <a href="../../../../Simples/Core/Route/Match.html"><abbr title="Simples\Core\Route\Match">Match</abbr></a> $match)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Simples/Core/Http/Request.html"><abbr title="Simples\Core\Http\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Simples/Core/Route/Match.html"><abbr title="Simples\Core\Route\Match">Match</abbr></a></td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Simples\Core\Http\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answer">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Specialty/ApiController.php#L28">line 28</a></div>
+        <code>            protected        <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>answer</strong>(null $content = null, array $meta = [], int $code = 200)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_request">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_request"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L116">line 116</a></div>
+        <code>final            protected        <a href="../../../../Simples/Core/Http/Request.html"><abbr title="Simples\Core\Http\Request">Request</abbr></a>
+    <strong>request</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Request.html"><abbr title="Simples\Core\Http\Request">Request</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_response">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_response"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L124">line 124</a></div>
+        <code>final            protected        <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>response</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_match">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_match"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L132">line 132</a></div>
+        <code>                    <a href="../../../../Simples/Core/Route/Match.html"><abbr title="Simples\Core\Route\Match">Match</abbr></a>
+    <strong>match</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Route/Match.html"><abbr title="Simples\Core\Route\Match">Match</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_input">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_input"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L142">line 142</a></div>
+        <code>                    mixed
+    <strong>input</strong>($name, $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLog">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_setLog"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L154">line 154</a></div>
+        <code>                    
+    <strong>setLog</strong>($logging)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$logging</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method___call"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L164">line 164</a></div>
+        <code>                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>__call</strong>($name, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerContinue">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerContinue"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerContinue</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 100</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerProcessing">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerProcessing"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerProcessing</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 102</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerOK">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerOK"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerOK</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 200</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerCreated">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerCreated"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerCreated</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 201</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerAccepted">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerAccepted"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerAccepted</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>//  202</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNonAuthoritativeInformation">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNonAuthoritativeInformation"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNonAuthoritativeInformation</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 203</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNoContent">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNoContent"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNoContent</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 204</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerResetContent">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerResetContent"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerResetContent</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 205</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerPartialContent">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerPartialContent"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerPartialContent</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 206</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerMultiStatus">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerMultiStatus"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerMultiStatus</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 207</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerAlreadyReported">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerAlreadyReported"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerAlreadyReported</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 208</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerFound">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerFound"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerFound</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 302</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerSeeOther">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerSeeOther"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerSeeOther</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 303</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNotModified">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNotModified"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNotModified</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 304</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerUseProxy">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerUseProxy"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerUseProxy</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 305</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerTemporaryRedirect">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerTemporaryRedirect"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerTemporaryRedirect</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 307</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerBadRequest">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerBadRequest"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerBadRequest</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 400</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerUnauthorized">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerUnauthorized"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerUnauthorized</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 401</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerPaymentRequired">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerPaymentRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerPaymentRequired</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 402</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerForbidden">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerForbidden"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerForbidden</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 403</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNotFound">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNotFound"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNotFound</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 404</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerMethodNotAllowed">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerMethodNotAllowed"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerMethodNotAllowed</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 405</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNotAcceptable">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNotAcceptable"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNotAcceptable</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 406</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerProxyAuthenticationRequired">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerProxyAuthenticationRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerProxyAuthenticationRequired</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 407</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerRequestTimeout">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestTimeout"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerRequestTimeout</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 408</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerConflict">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerConflict"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerConflict</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 409</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerGone">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerGone"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerGone</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 410</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerLengthRequired">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerLengthRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerLengthRequired</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 411</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerPreconditionFailed">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerPreconditionFailed"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerPreconditionFailed</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 412</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerRequestEntityTooLarge">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestEntityTooLarge"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerRequestEntityTooLarge</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 413</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerRequestURITooLarge">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestURITooLarge"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerRequestURITooLarge</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 414</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerUnsupportedMediaType">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerUnsupportedMediaType"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerUnsupportedMediaType</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 415</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerRequestedRangeNotSatisfiable">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestedRangeNotSatisfiable"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerRequestedRangeNotSatisfiable</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 416</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerExpectationFailed">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerExpectationFailed"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerExpectationFailed</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 417</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerIAmATeapot">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerIAmATeapot"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerIAmATeapot</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 418</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNotProcessableEntity">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNotProcessableEntity"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNotProcessableEntity</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 422</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerLocked">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerLocked"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerLocked</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 423</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerFailedDependency">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerFailedDependency"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerFailedDependency</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 424</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerUnorderedCollection">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerUnorderedCollection"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerUnorderedCollection</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 425</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerUpgradeRequired">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerUpgradeRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerUpgradeRequired</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 426</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerPreconditionRequired">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerPreconditionRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerPreconditionRequired</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 428</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerTooManyRequests">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerTooManyRequests"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerTooManyRequests</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 429</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerRequestHeaderFieldsTooLarge">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerRequestHeaderFieldsTooLarge"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerRequestHeaderFieldsTooLarge</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 431</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerInternalServerErro">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerInternalServerErro"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerInternalServerErro</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 500</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNotImplemented">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNotImplemented"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNotImplemented</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 501</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerBadGateway">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerBadGateway"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerBadGateway</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 502</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerServiceUnavailable">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerServiceUnavailable"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerServiceUnavailable</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 503</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerGatewayTimeout">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerGatewayTimeout"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerGatewayTimeout</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 504</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerHTTPVersionNotSupported">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerHTTPVersionNotSupported"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerHTTPVersionNotSupported</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 505</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerVariantAlsoNegotiates">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerVariantAlsoNegotiates"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerVariantAlsoNegotiates</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 506</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerInsufficientStorage">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerInsufficientStorage"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerInsufficientStorage</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 507</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerLoopDetected">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerLoopDetected"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerLoopDetected</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 508</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_answerNetworkAuthenticationRequired">
+        <div class="location">in <a href="../../../../Simples/Core/Http/Controller.html#method_answerNetworkAuthenticationRequired"><abbr title="Simples\Core\Http\Controller">Controller</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Controller.php#L73">line 73</a></div>
+        <code>                    Response
+    <strong>answerNetworkAuthenticationRequired</strong>($data = null, $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>// 511</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Specialty/ApiController.php#L38">line 38</a></div>
+        <code>                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>post</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Specialty/ApiController.php#L62">line 62</a></div>
+        <code>                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>get</strong>($id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Specialty/ApiController.php#L96">line 96</a></div>
+        <code>                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>put</strong>($id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Http/Specialty/ApiController.php#L122">line 122</a></div>
+        <code>                    <a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a>
+    <strong>delete</strong>($id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Http/Response.html"><abbr title="Simples\Core\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

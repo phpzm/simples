@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Simples\Core\Model\DataMapper | Simples</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Simples_Core_Model_DataMapper" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Simples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Simples.html">Simples</a></li>
+                                        <li><a href="../../../Simples/Core.html">Core</a></li>
+                                        <li><a href="../../../Simples/Core/Model.html">Model</a></li>
+    
+                <li>DataMapper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DataMapper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DataMapper</strong>        extends <a href="../../../Simples/Core/Model/AbstractModel.html"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a>        (<a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class DataMapper</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_connection">
+                                        protected                                        string
+                </td>
+                <td>$connection</td>
+                <td class="last">Connection name</td>
+                <td><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#property_connection"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fields">
+                                        protected                                        array
+                </td>
+                <td>$fields</td>
+                <td class="last">Fields of model</td>
+                <td><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#property_fields"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hashKey">
+                                        protected                                        string
+                </td>
+                <td>$hashKey</td>
+                <td class="last">Field with a unique hash what can be used to find a record and can be
+created by client</td>
+                <td><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#property_hashKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_createKeys">
+                                        protected                                        array
+                </td>
+                <td>$createKeys</td>
+                <td class="last">Fields to persist the creation object</td>
+                <td><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#property_createKeys"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateKeys">
+                                        protected                                        array
+                </td>
+                <td>$updateKeys</td>
+                <td class="last">Fields to persist details about the update</td>
+                <td><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#property_updateKeys"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destroyKeys">
+                                        protected                                        array
+                </td>
+                <td>$destroyKeys</td>
+                <td class="last">Fields to persist details about the destroy</td>
+                <td><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#property_destroyKeys"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $connection = null)
+        
+                                            <p>AbstractModel constructor to configure a new instance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method___construct"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Simples\Core\Persistence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>($name, $arguments)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method___call"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_driver">driver</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_driver"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register">register</a>(array $values)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_register"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_recover">recover</a>($values = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_recover"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_change">change</a>($values, $filters = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_change"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>($filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_remove"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDriver">getDriver</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_getDriver"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClausules">getClausules</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_getClausules"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSettings">getSettings</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_getSettings"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>Clear the clausules changes</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Persistence/Engine.html#method_reset"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Simples\Core\Model\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_box">box</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_box"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p>Method with the responsibility of create a record of model</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Data/Collection.html"><abbr title="Simples\Core\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_read">read</a>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p>Read records with the filters informed</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p>Update the record given</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p>Remove the given record of database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p>Get total of records based on filters</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Simples\Core\Model\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instance">instance</a>(string $collection, string $primaryKey, string $relationship = &#039;&#039;)
+        
+                                            <p>Configure the instance with reference properties</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_instance"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(string $name, string $type = &#039;&#039;, array $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_add"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_import">import</a>(string $name, string $relationship, array $options = [])
+        
+                                            <p>Allow use this field like readonly in read filtering and getting it in record</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_import"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_get"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has">has</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_has"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_map">map</a>(string $source, string $target)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_map"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>(string $action = &#039;&#039;, bool $strict = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_getFields"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_configureFields">configureFields</a>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_configureFields"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_before">before</a>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $previous = null)
+        
+                                            <p>This method is called before the operation be executed, the changes made in Record will be save</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_before"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_after">after</a>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record)
+        
+                                            <p>Triggered after operation be executed, the changes made in Record has no effect in storage</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_after"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaults">getDefaults</a>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_getDefaults"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hashKey">hashKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_hashKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParents">getParents</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_getParents"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCollection">getCollection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_getCollection"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrimaryKey">getPrimaryKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_getPrimaryKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashKey">getHashKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Core/Model/AbstractModel.html#method_getHashKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActionFields">getActionFields</a>(string $action, bool $strict = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseFilterFields">parseFilterFields</a>(array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseFilterValues">parseFilterValues</a>(array $filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimestampValue">getTimestampValue</a>(string $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseReadRelations">parseReadRelations</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_previous">previous</a>(<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Core/Persistence/Filter.html"><abbr title="Simples\Core\Persistence\Filter">Filter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDestroyFilter">getDestroyFilter</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method___construct"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L91">line 91</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $connection = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AbstractModel constructor to configure a new instance</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method___call"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L58">line 58</a></div>
+        <code>                    <abbr title="Simples\Core\Persistence\$this">$this</abbr>
+    <strong>__call</strong>($name, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Simples\Core\Persistence\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_driver">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_driver"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L78">line 78</a></div>
+        <code>            protected        <a href="../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a>
+    <strong>driver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_register"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L91">line 91</a></div>
+        <code>final                    string
+    <strong>register</strong>(array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recover">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_recover"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L100">line 100</a></div>
+        <code>final                    array
+    <strong>recover</strong>($values = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_change">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_change"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L110">line 110</a></div>
+        <code>final                    int
+    <strong>change</strong>($values, $filters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_remove"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L119">line 119</a></div>
+        <code>final                    int
+    <strong>remove</strong>($filters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDriver">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_getDriver"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L127">line 127</a></div>
+        <code>                    <a href="../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a>
+    <strong>getDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClausules">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_getClausules"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L135">line 135</a></div>
+        <code>                    array
+    <strong>getClausules</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSettings">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_getSettings"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L143">line 143</a></div>
+        <code>                    array|mixed
+    <strong>getSettings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">in <a href="../../../Simples/Core/Persistence/Engine.html#method_reset"><abbr title="Simples\Core\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Engine.php#L151">line 151</a></div>
+        <code>                    
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear the clausules changes</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_box">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_box"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L104">line 104</a></div>
+        <code>        static            <abbr title="Simples\Core\Model\$this">$this</abbr>
+    <strong>box</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Simples\Core\Model\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L30">line 30</a></div>
+        <code>final                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+    <strong>create</strong>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method with the responsibility of create a record of model</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesHookError.html"><abbr title="Simples\Core\Model\Error\SimplesHookError">SimplesHookError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L82">line 82</a></div>
+        <code>final                    <a href="../../../Simples/Core/Data/Collection.html"><abbr title="Simples\Core\Data\Collection">Collection</abbr></a>
+    <strong>read</strong>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read records with the filters informed</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Data/Collection.html"><abbr title="Simples\Core\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesHookError.html"><abbr title="Simples\Core\Model\Error\SimplesHookError">SimplesHookError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L127">line 127</a></div>
+        <code>final                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+    <strong>update</strong>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update the record given</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesActionError.html"><abbr title="Simples\Core\Model\Error\SimplesActionError">SimplesActionError</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesHookError.html"><abbr title="Simples\Core\Model\Error\SimplesHookError">SimplesHookError</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Error/SimplesResourceError.html"><abbr title="Simples\Core\Data\Error\SimplesResourceError">SimplesResourceError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L189">line 189</a></div>
+        <code>final                    <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+    <strong>destroy</strong>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove the given record of database</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesActionError.html"><abbr title="Simples\Core\Model\Error\SimplesActionError">SimplesActionError</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesHookError.html"><abbr title="Simples\Core\Model\Error\SimplesHookError">SimplesHookError</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Error/SimplesResourceError.html"><abbr title="Simples\Core\Data\Error\SimplesResourceError">SimplesResourceError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L254">line 254</a></div>
+        <code>                    int
+    <strong>count</strong>(array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get total of records based on filters</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Model/Error/SimplesActionError.html"><abbr title="Simples\Core\Model\Error\SimplesActionError">SimplesActionError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_instance"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L167">line 167</a></div>
+        <code>            protected        <abbr title="Simples\Core\Model\$this">$this</abbr>
+    <strong>instance</strong>(string $collection, string $primaryKey, string $relationship = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Configure the instance with reference properties</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$primaryKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Simples\Core\Model\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Error/SimplesRunTimeError.html"><abbr title="Simples\Core\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_add"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L191">line 191</a></div>
+        <code>            protected        <a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a>
+    <strong>add</strong>(string $name, string $type = &#039;&#039;, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_import"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L207">line 207</a></div>
+        <code>            protected        <a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a>
+    <strong>import</strong>(string $name, string $relationship, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Allow use this field like readonly in read filtering and getting it in record</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Error/SimplesRunTimeError.html"><abbr title="Simples\Core\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_get"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L232">line 232</a></div>
+        <code>final                    <a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a>
+    <strong>get</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Model/Field.html"><abbr title="Simples\Core\Model\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_has"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L241">line 241</a></div>
+        <code>final                    bool
+    <strong>has</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_map">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_map"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L250">line 250</a></div>
+        <code>                    
+    <strong>map</strong>(string $source, string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_getFields"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L262">line 262</a></div>
+        <code>final                    array
+    <strong>getFields</strong>(string $action = &#039;&#039;, bool $strict = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$strict</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configureFields">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_configureFields"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L313">line 313</a></div>
+        <code>                    
+    <strong>configureFields</strong>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_before">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_before"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L331">line 331</a></div>
+        <code>            protected        bool
+    <strong>before</strong>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $previous = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This method is called before the operation be executed, the changes made in Record will be save</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$previous</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_after">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_after"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L346">line 346</a></div>
+        <code>            protected        bool
+    <strong>after</strong>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Triggered after operation be executed, the changes made in Record has no effect in storage</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaults">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_getDefaults"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L360">line 360</a></div>
+        <code>                    array
+    <strong>getDefaults</strong>(string $action, <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hashKey">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_hashKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L372">line 372</a></div>
+        <code>final                    string
+    <strong>hashKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParents">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_getParents"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L380">line 380</a></div>
+        <code>final                    array
+    <strong>getParents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCollection">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_getCollection"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L388">line 388</a></div>
+        <code>final                    string
+    <strong>getCollection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryKey">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_getPrimaryKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L396">line 396</a></div>
+        <code>final                    string
+    <strong>getPrimaryKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashKey">
+        <div class="location">in <a href="../../../Simples/Core/Model/AbstractModel.html#method_getHashKey"><abbr title="Simples\Core\Model\AbstractModel">AbstractModel</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Model/AbstractModel.php#L404">line 404</a></div>
+        <code>final                    string
+    <strong>getHashKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActionFields">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L308">line 308</a></div>
+        <code>            protected        array|mixed
+    <strong>getActionFields</strong>(string $action, bool $strict = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$strict</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseFilterFields">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L328">line 328</a></div>
+        <code>            protected        array
+    <strong>parseFilterFields</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseFilterValues">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L345">line 345</a></div>
+        <code>            protected        array
+    <strong>parseFilterValues</strong>(array $filters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimestampValue">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L364">line 364</a></div>
+        <code>            protected        null|string
+    <strong>getTimestampValue</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseReadRelations">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L380">line 380</a></div>
+        <code>            protected        array
+    <strong>parseReadRelations</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_previous">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L405">line 405</a></div>
+        <code>            protected        <a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a>
+    <strong>previous</strong>(<a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Data/Record.html"><abbr title="Simples\Core\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestroyFilter">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Model/DataMapper.php#L427">line 427</a></div>
+        <code>            protected        <a href="../../../Simples/Core/Persistence/Filter.html"><abbr title="Simples\Core\Persistence\Filter">Filter</abbr></a>
+    <strong>getDestroyFilter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Core/Persistence/Filter.html"><abbr title="Simples\Core\Persistence\Filter">Filter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

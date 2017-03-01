@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Simples\Core\Persistence\SQL\SQLDriver | Simples</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Simples_Core_Persistence_SQL_SQLDriver" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Simples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Simples.html">Simples</a></li>
+                                        <li><a href="../../../../Simples/Core.html">Core</a></li>
+                                        <li><a href="../../../../Simples/Core/Persistence.html">Persistence</a></li>
+                                        <li><a href="../../../../Simples/Core/Persistence/SQL.html">SQL</a></li>
+    
+                <li>SQLDriver</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SQLDriver
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SQLDriver</strong>        extends <a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a>        implements
+        <a href="../../../../Simples/Core/Persistence/Driver.html"><abbr title="Simples\Core\Persistence\Driver">Driver</abbr></a>        (<a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class SQLDriver</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_resource">
+                                        protected                                        mixed
+                </td>
+                <td>$resource</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/Connection.html#property_resource"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_settings">
+                                        protected                                        array
+                </td>
+                <td>$settings</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/Connection.html#property_settings"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logs">
+                                        protected                                        array
+                </td>
+                <td>$logs</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/Connection.html#property_logs"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $settings)
+        
+                                            <p>SQLDriver constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connection">connection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_connection"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSettings">getSettings</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/Connection.html#method_getSettings"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLogs">getLogs</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/Connection.html#method_getLogs"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Simples/Core/Persistence/Connection.html"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addLog">addLog</a>(string $command, array $parameters, bool $logging = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/Connection.html#method_addLog"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dsn">dsn</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_dsn"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/PDOStatement">PDOStatement</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_statement">statement</a>($sql)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_statement"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>($sql, array $values)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_execute"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_start">start</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commit">commit</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rollback">rollback</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(array $clausules, array $values)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_read">read</a>(array $clausules, array $values = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(array $clausules, array $values, array $filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(array $clausules, array $values)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInsert">getInsert</a>(array $clausules)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelect">getSelect</a>(array $clausules)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUpdate">getUpdate</a>(array $clausules)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDelete">getDelete</a>(array $clausules)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseFilter">parseFilter</a>(array $filters, string $separator)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseGroup">parseGroup</a>(array $groups, string $separator)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOrder">parseOrder</a>(array $orders, string $separator)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseHaving">parseHaving</a>(array $having, string $separator)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseLimit">parseLimit</a>($limits, $separator)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseJoin">parseJoin</a>(array $resources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseColumns">parseColumns</a>($columns)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L22">line 22</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $settings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SQLDriver constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connection">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_connection"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLConnection.php#L18">line 18</a></div>
+        <code>            protected        mixed
+    <strong>connection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSettings">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/Connection.html#method_getSettings"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Connection.php#L45">line 45</a></div>
+        <code>                    array
+    <strong>getSettings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogs">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/Connection.html#method_getLogs"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Connection.php#L53">line 53</a></div>
+        <code>                    array
+    <strong>getLogs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLog">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/Connection.html#method_addLog"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/Connection.php#L66">line 66</a></div>
+        <code>                    <a href="../../../../Simples/Core/Persistence/Connection.html"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a>
+    <strong>addLog</strong>(string $command, array $parameters, bool $logging = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$logging</td>
+                <td>(false)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Simples/Core/Persistence/Connection.html"><abbr title="Simples\Core\Persistence\Connection">Connection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dsn">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_dsn"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLConnection.php#L38">line 38</a></div>
+        <code>    abstract        protected        string
+    <strong>dsn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_statement">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_statement"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLConnection.php#L44">line 44</a></div>
+        <code>final            protected        <a target="_blank" href="http://php.net/PDOStatement">PDOStatement</a>
+    <strong>statement</strong>($sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sql</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/PDOStatement">PDOStatement</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="../../../../Simples/Core/Persistence/SQL/SQLConnection.html#method_execute"><abbr title="Simples\Core\Persistence\SQL\SQLConnection">SQLConnection</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLConnection.php#L54">line 54</a></div>
+        <code>final            protected        int|null
+    <strong>execute</strong>($sql, array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sql</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_start">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L30">line 30</a></div>
+        <code>                    bool
+    <strong>start</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L38">line 38</a></div>
+        <code>                    bool
+    <strong>commit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollback">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L46">line 46</a></div>
+        <code>                    bool
+    <strong>rollback</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L57">line 57</a></div>
+        <code>final                    string
+    <strong>create</strong>(array $clausules, array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Simples/Core/Persistence/SQL/Error/SimplesSQLDataErrorSimples.html"><abbr title="Simples\Core\Persistence\SQL\Error\SimplesSQLDataErrorSimples">SimplesSQLDataErrorSimples</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L78">line 78</a></div>
+        <code>final                    array
+    <strong>read</strong>(array $clausules, array $values = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Simples/Core/Persistence/SQL/Error/SimplesSQLDataErrorSimples.html"><abbr title="Simples\Core\Persistence\SQL\Error\SimplesSQLDataErrorSimples">SimplesSQLDataErrorSimples</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L100">line 100</a></div>
+        <code>final                    int
+    <strong>update</strong>(array $clausules, array $values, array $filters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Simples/Core/Persistence/SQL/Error/SimplesSQLDataErrorSimples.html"><abbr title="Simples\Core\Persistence\SQL\Error\SimplesSQLDataErrorSimples">SimplesSQLDataErrorSimples</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L122">line 122</a></div>
+        <code>final                    int
+    <strong>destroy</strong>(array $clausules, array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Simples/Core/Persistence/SQL/Error/SimplesSQLDataErrorSimples.html"><abbr title="Simples\Core\Persistence\SQL\Error\SimplesSQLDataErrorSimples">SimplesSQLDataErrorSimples</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInsert">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L142">line 142</a></div>
+        <code>                    string
+    <strong>getInsert</strong>(array $clausules)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelect">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L163">line 163</a></div>
+        <code>                    string
+    <strong>getSelect</strong>(array $clausules)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdate">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L209">line 209</a></div>
+        <code>                    string
+    <strong>getUpdate</strong>(array $clausules)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDelete">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L246">line 246</a></div>
+        <code>                    string
+    <strong>getDelete</strong>(array $clausules)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$clausules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseFilter">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L298">line 298</a></div>
+        <code>            protected        string
+    <strong>parseFilter</strong>(array $filters, string $separator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseGroup">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L314">line 314</a></div>
+        <code>            protected        string
+    <strong>parseGroup</strong>(array $groups, string $separator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$groups</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOrder">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L324">line 324</a></div>
+        <code>            protected        string
+    <strong>parseOrder</strong>(array $orders, string $separator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$orders</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseHaving">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L334">line 334</a></div>
+        <code>            protected        string
+    <strong>parseHaving</strong>(array $having, string $separator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$having</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseLimit">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L344">line 344</a></div>
+        <code>            protected        string
+    <strong>parseLimit</strong>($limits, $separator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$limits</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseJoin">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L353">line 353</a></div>
+        <code>            protected        string
+    <strong>parseJoin</strong>(array $resources)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$resources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseColumns">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/src/Persistence/SQL/SQLDriver.php#L377">line 377</a></div>
+        <code>            protected        string
+    <strong>parseColumns</strong>($columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Simples/Core/Error/SimplesRunTimeError.html"><abbr title="Simples\Core\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
