@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "phpzm/core": "^0.1.0"
+        "phpzm/core": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
