@@ -107,7 +107,7 @@ Ou seja, o namespace padrão que você irá utilizar é o `App` e o arquivo deve
 Como forma de indicar um caminho inicial sugerimos essa pasta chamada `storage` na raiz do projeto para a manutenção de documentos que não podem ficar abertos ao acesso público.
 
 ## /vendor
-A pasta `vendor` é criada automaticamente pelo `Composer`. Ela tem as dependências que seu projeto irá e as configurações de carregamentos de arquivos. Ela está por padrão configurada no arquivo `.gitignore` para ser ignorada pelo `Git`
+A pasta `vendor` é criada automaticamente pelo `Composer`. Ela tem as dependências que seu projeto irá utilizar e as configurações de carregamentos de arquivos. Ela está por padrão configurada no arquivo `.gitignore` para ser ignorada pelo `Git`
 
 ## Iniciando os Trabalhos
 ### Criando rotas
@@ -157,7 +157,7 @@ return function($router) {
 }
 ```
 Um `$router->resource` vai criar:<br>
-<table>
+<table style="width: 100%">
 <thead>
 <tr>
   <th>Verb</th> <th>Path</th> <th>Action</th> <th>Route Name</th>
