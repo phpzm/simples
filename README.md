@@ -34,7 +34,7 @@ $ composer run docker:init
 
 Em seguida você pode usar o comando que está acostumado para rodar os containers ou usar
 ```shell
-$ composer run docker:serve
+$ composer run docker:serve --timeout=0
 ```
 
 ### Built-in Server
