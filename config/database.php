@@ -1,6 +1,6 @@
 <?php
 
-use Simples\Core\Persistence\Drivers\MySQL;
+use Simples\Persistence\Drivers\MySQL;
 
 return [
     'default' => [

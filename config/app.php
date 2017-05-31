@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => 'PHPZM / Simples',
+    'name' => 'Simples',
     'url' => env('CLIENT_DEFAULT_URL'),
     'namespace' => 'App\\',
     'src' => 'app/src/',

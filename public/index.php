@@ -4,6 +4,15 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 use Simples\Kernel\App;
 
-$app = new App(['root' => dirname(__DIR__), 'strict' => true]);
+$options = [
+    'root' => dirname(__DIR__),
+    'strict' => true,
+    'lang' => [
+        'default' => 'pt-br',
+        'fallback' => 'en'
+    ]
+];
+
+$app = new App($options);
 
 $app->http();

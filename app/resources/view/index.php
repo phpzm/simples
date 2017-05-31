@@ -1,7 +1,7 @@
 <?php
 /** @var Simples\Template\View $this */
 
-$this->extend('layout/basic/html.php', 'body');
+$this->extend('_layout/basic/html.php', 'body');
 ?>
 <div class="flex-center position-reference full-height">
   <div class="content">

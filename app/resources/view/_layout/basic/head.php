@@ -1,7 +1,9 @@
 <?php
 /** @var Simples\Template\View $this */
 
-$title = config('app.name') . ' / ' . $this->get('title');
+$app = config('app.name');
+$title = $this->get('title');
+$title = $app . ' / ' . ($title ?  $title : 'phpZM');
 
 ?>
 <head>
@@ -9,11 +11,6 @@ $title = config('app.name') . ' / ' . $this->get('title');
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <meta http-equiv="cache-control" content="max-age=0"/>
-  <meta http-equiv="cache-control" content="no-cache"/>
-  <meta http-equiv="expires" content="0"/>
-  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
-  <meta http-equiv="pragma" content="no-cache"/>
 
   <title><?php out($title) ?></title>
 

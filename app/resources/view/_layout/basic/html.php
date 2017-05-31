@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-$this->append('layout/basic/head.php');
-$this->append('layout/basic/body.php');
+$this->append('_layout/basic/head.php');
+$this->append('_layout/basic/body.php');
 ?>
 </html>

@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Simples\Controller\ViewController;
+use Simples\Message\Lang;
 
 /**
  * Class View
@@ -23,7 +24,10 @@ class View extends ViewController
      */
     function __invoke()
     {
-        return $this->view('whoops.php');
+        $data = [
+            'title' => Lang::get('error', 'page-not-found')
+        ];
+        return $this->view('whoops.php', $data);
     }
 
 }
