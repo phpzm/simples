@@ -8,7 +8,7 @@ $this->extend('_layout/basic/html.php', 'body');
     <img src="<?php $this->image('logo.png'); ?>" class="logo" alt="building">
     <hr>
     <div class="title">
-      Simples
+      simples
     </div>
     <hr>
     <div class="links">
