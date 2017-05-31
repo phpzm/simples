@@ -9,10 +9,13 @@ return [
     'resources' => [
         'root' => 'app/resources',
     ],
-    'views' => [
-        'root' => 'app/resources/view',
-    ],
     'storage' => [
         'root' => 'storage',
+    ],
+    'status' => [
+        'success' => 200,
+        'notFound' => 404,
+        'notImplemented' => 501,
+        'fail' => 500,
     ],
 ];

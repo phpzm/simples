@@ -2,7 +2,7 @@
   "name": "phpzm/simples",
   "type": "project",
   "minimum-stability": "dev",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "authors": [
     {
@@ -19,7 +19,7 @@
     }
   },
   "config": {
-    "timeout": 86400
+    "process-timeout": 86400
   },
   "scripts": {
     "env:init" :"cp .env.sample .env",
