@@ -65,11 +65,12 @@ Abriga os documentos relacionados a composição dos recursos de forma indireta.
 
 `[config/app.php]`
 ```php
-(...)
+<?php
+    (...)
     'resources' => [
         'root' => 'app/resources',
     ]
-(...)
+    (...)
 ```
 Veremos mais sobre essa parte das `views` e sobre sua utilização da seção de Templates.
 
@@ -78,11 +79,12 @@ Esse é um caminho sugerido para utilização das rotas. Ele está descrito em `
 
 `[config/route.php]`
 ```php
-(...)
+<?php
+    (...)
     'files' => [
         'app/routes/index.php'
     ]
-(...)
+    (...)
 ```
 Sendo assim, quando uma requisição HTTP for enviada para o `public/index.php` ele irá começar a procurar por rotas no arquivo `app/routes/index.php`. Mais pra frente, na seção de criação de rotas, veremos como criar rotas de forma organizada utilizando o Simples.
 
@@ -90,14 +92,14 @@ Sendo assim, quando uma requisição HTTP for enviada para o `public/index.php` 
 Esta pasta está diretamente relacionada ao `autoloader` do `Composer` através da configuração no `composer.json`
 
 `[composer.json]`
-```json
-(...)
+```
+  (...)
   "autoload": {
     "psr-4": {
       "App\\": "app/src/"
     }
   }
-(...)
+  (...)
 ```
 Ou seja, o namespace padrão que você irá utilizar é o `App` e o arquivo deverá estrar dentro da pasta descrita acima. Obviamente você pode modificar isso. Note que usando a convenção `PSR-4` quando você criar um documento com o `namespace` adequado poderá usá-lo de forma transparente. Entraremos em mais detalhes sobre isso na seção de composição de estruturas.
 
