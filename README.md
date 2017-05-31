@@ -30,7 +30,7 @@ $ docker-compose up
 
 Para utilizar o o servidor de desenvolvimento que vem junto com o PHP utilize os comandos abaixo
 ```
-$ composer run serve
+$ composer run serve --timeout=0
 ```
 
 Se deu tudo certo, ao acessar a url `http://localhost:8080` você já verá nossa página padrão de apresentação
