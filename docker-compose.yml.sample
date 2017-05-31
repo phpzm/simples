@@ -9,7 +9,7 @@ services:
     volumes:
       - ./.docker/mysql:/var/lib/mysql
     ports:
-      - "4000:3306"
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=simples
       - MYSQL_DATABASE=simples
@@ -22,6 +22,6 @@ services:
     volumes:
       - .:/var/www/app
     ports:
-      - "4010:8080"
+      - "8080:8080"
     links:
       - mysql-simples

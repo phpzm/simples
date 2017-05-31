@@ -1,15 +1,20 @@
 <?php
+/** @var Simples\Template\View $this */
 
-/** @var Simples\Core\Template\View $this */
-
+$this->extend('layout/basic/html.php', 'body');
 ?>
-<html>
-  <head>
-    <title><?php out(config('app.name')); ?></title>
-  </head>
-  <body>
-    <div style="text-align: center;">
-      Vamos falar de PHP?
+<div class="flex-center position-reference full-height">
+  <div class="content">
+    <img src="<?php $this->image('logo.png'); ?>" class="logo" alt="building">
+    <hr>
+    <div class="title">
+      Simples
     </div>
-  </body>
-</html>
+    <hr>
+    <div class="links">
+      <a href="https://docs.simples.cloud">Documentation</a>
+      <a href="https://phpzm.rocks">phpZM</a>
+      <a href="https://github.com/phpzm/simples">GitHub</a>
+    </div>
+  </div>
+</div>

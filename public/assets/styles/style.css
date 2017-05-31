@@ -1,0 +1,62 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+hr {
+    margin: 32px 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(210, 210, 210, 0.75), rgba(0, 0, 0, 0.05));
+}
+
+.logo {
+    max-height: 128px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-reference {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+    min-width: 60%;
+}
+
+.title {
+    font-size: 72px;
+}
+
+.links {
+    margin: 64px 0 0 0;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 32px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
