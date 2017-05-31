@@ -61,16 +61,20 @@ Este diretório contém uma lista de arquivos PHP que são usados para configura
 Finalmente chegamos onde a festa acontece. O Simples vem com as configurações adequadas para usar este diretório para consultar os documentos que você irá criar. Como você poderá fazer muita coisa dividimos tudo em partes.
 
 #### /app/resources
-Abriga os documentos relacionados a composição dos recursos de forma indireta. Ele vem configurado inicialmente com 3 diretórios (email, locales, view), mas você pode crescer ele a vontade. É possível ver no arquivo `config/app.php` uma instrução de configuração semelhante a essa abaixo. Com base no exemplo, podemos usar o helper `config('app.views.root')` que será retornado o valor `app/resources/view` e é assim que o Simples localiza os recursos que usa.
+Abriga os documentos relacionados a composição dos recursos de forma indireta. Ele vem configurado inicialmente com 3 diretórios (email, locales, view), mas você pode crescer ele a vontade. É possível ver no arquivo `config/app.php` uma instrução de configuração semelhante a essa abaixo. Com base no exemplo, podemos usar o helper `config('app.resources.root')` que será retornado o valor `app/resources` e é assim que o Simples localiza os recursos que usa.
+
+`[config/app.php]`
 ```php
-'views' => [
-    'root' => 'app/resources/view',
+'resources' => [
+    'root' => 'app/resources',
 ]
 ```
 Veremos mais sobre essa parte das `views` e sobre sua utilização da seção de Templates.
 
 #### /app/routes
 Esse é um caminho sugerido para utilização das rotas. Ele está descrito em `config/route.php` onde é possível informar um array de arquivos que serão inicializados para compor as rotas da aplicação.
+
+`[config/route.php]`
 ```php
 'files' => [
     'app/routes/index.php'
@@ -80,6 +84,8 @@ Sendo assim, quando uma requisição HTTP for enviada para o `public/index.php` 
 
 #### /app/src
 Esta pasta está diretamente relacionada ao `autoloader` do `Composer` através da configuração no `composer.json`
+
+`[composer.json]`
 ```json
 "autoload": {
   "psr-4": {
@@ -98,7 +104,7 @@ A pasta `vendor` é criada automaticamente pelo `Composer`. Ela tem as dependên
 ## Iniciando os Trabalhos
 ### Criando rotas
 
-A configuração de qual a primeira rota (ou quais as primeiras rotas) será chamada fica por padrão dentro de `app/configs/route.php`.
+A configuração de qual a primeira rota (ou quais as primeiras rotas) será chamada fica por padrão dentro de `app/config/route.php`.
 
 As configurações de acesso aos recursos da aplicação podem ser feitas nos arquivos de rotas. Os comandos podem ser escritos diretamente direto no corpo do arquivo (onde uma variável $router estará disponível por questões de escopo) ou usando o retorno de closures que recebem o $router como parâmetro.
 
