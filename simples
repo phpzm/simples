@@ -5,12 +5,12 @@ require_once 'vendor/autoload.php';
 
 use Simples\Kernel\App;
 
-$service = off($argv, 1, '');
+$service = argv($argv);
 
 if (!$service) {
-    $service = 'help';
+    $service = ['help'];
 }
 
 $app = new App(['root' => __DIR__]);
 
-$app->cli([$service]);
+$app->cli($service);

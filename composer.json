@@ -22,9 +22,10 @@
     "process-timeout": 86400
   },
   "scripts": {
-    "env:init" :"cp .env.sample .env",
-    "docker:init" :"cp docker-compose.yml.sample docker-compose.yml",
-    "docker:serve" :"docker-compose up",
+    "symlink": "sudo ln -s \"$(pwd)/simples\" /usr/bin/simples",
+    "env:init": "cp .env.sample .env",
+    "docker:init": "cp docker-compose.yml.sample docker-compose.yml",
+    "docker:serve": "docker-compose up",
     "php:serve": "php -S localhost:8080 -t public/"
   }
 }
