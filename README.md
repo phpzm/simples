@@ -4,11 +4,11 @@ O Simples é um projeto que reúne um conjunto de pacotes para trabalhar com PHP
 
 ## Instalação
 Para começar a usar o simples você pode usar o comando:
-```
+```shell
 $ composer create-project phpzm/simples
 ```
 ou fazer uma cópia da branch master do repositório
-```
+```shell
 $ git clone https://github.com/phpzm/simples.git <dir>
 $ cd <dir>
 $ rm .git
@@ -19,26 +19,83 @@ Neste momento você já tem baixada uma arquiretura básica e é preciso configu
 
 ## Configurações do Ambiente
 
-As duas configurações que são disponibilizadas como base são direcionadas para a mesma url: `http://localhost:8080`
+As duas configurações que são disponibilizadas como base que vamos citar abaixo são direcionadas para a mesma url: `http://localhost:8080`
+Antes de iniciar qualquer um dos modos do servidor já faça uma cópia do arquivo de exemplo do `.env` que é disponibilizado com o projeto
+```shell
+$ composer run env:init
+```
 
 ### Docker
 
 Cria uma cópia do arquivo de exemplo que é disponibilizado junto com o projeto
+```shell
+$ composer run docker:init
 ```
-$ cp docker-compose.yml.sample docker-compose.yml
-$ docker-compose up
+
+Em seguida você pode usar o comando que está acostumado para rodar os containers ou usar
+```shell
+$ composer run docker:serve
 ```
 
 ### Built-in Server
 
 Para utilizar o o servidor de desenvolvimento que vem junto com o PHP utilize os comandos abaixo
-```
-$ composer run serve --timeout=0
+
+```shell
+$ composer run php:serve
 ```
 
 Se deu tudo certo, ao acessar a url `http://localhost:8080` você já verá nossa página padrão de apresentação
 
-## Configurações Básicas
+## Visão Geral
+
+Certo, a url que deveria funcionar está ok, mas vamos fazer um apanhado geral do que aconteceu para ela rodar.
+
+### /public
+Nesta pasta você encontrará o único ponto de entrada para requisições que sua aplicação terá. Ao abrir o arquivo `index.php` que tem dentro dela encontramos a primeira interação com os arquivos do Simples. Além do arquivo PHP, nela também ficam arquivos que costumamos chamar de `assets`. São eles as imagens, arquivos de estilo e recursos usados para aprimorar a visualização dos recursos da aplicação. Esta pasta será usada para deixar expostos documentos que podem ser acessados por qualquer pessoa. 
+
+### /config
+Este diretório contém uma lista de arquivos PHP que são usados para configurar comportamentos da aplicação. Enquanto estiver dando uma olhada nesses arquivos verá que existe por lá uma função chamada `env` sendo utilizada para definir algumas propriedades. Esta função recupera os valores que estão definidos no `.env`. 
+
+### /app
+Finalmente chegamos onde a festa acontece. O Simples vem com as configurações adequadas para usar este diretório para consultar os documentos que você irá criar. Como você poderá fazer muita coisa dividimos tudo em partes.
+
+#### /app/resources
+Abriga os documentos relacionados a composição dos recursos de forma indireta. Ele vem configurado inicialmente com 3 diretórios (email, locales, view), mas você pode crescer ele a vontade. É possível ver no arquivo `config/app.php` uma instrução de configuração semelhante a essa abaixo. Com base no exemplo, podemos usar o helper `config('app.views.root')` que será retornado o valor `app/resources/view` e é assim que o Simples localiza os recursos que usa.
+```php
+'views' => [
+    'root' => 'app/resources/view',
+]
+```
+Veremos mais sobre essa parte das `views` e sobre sua utilização da seção de Templates.
+
+#### /app/routes
+Esse é um caminho sugerido para utilização das rotas. Ele está descrito em `config/route.php` onde é possível informar um array de arquivos que serão inicializados para compor as rotas da aplicação.
+```php
+'files' => [
+    'app/routes/index.php'
+]
+```
+Sendo assim, quando uma requisição HTTP for enviada para o `public/index.php` ele irá começar a procurar por rotas no arquivo `app/routes/index.php`. Mais pra frente, na seção de criação de rotas, veremos como criar rotas de forma organizada utilizando o Simples.
+
+#### /app/src
+Esta pasta está diretamente relacionada ao `autoloader` do `Composer` através da configuração no `composer.json`
+```json
+"autoload": {
+  "psr-4": {
+    "App\\": "app/src/"
+  }
+}
+```
+Ou seja, o namespace padrão que você irá utilizar é o `App` e o arquivo deverá estrar dentro da pasta descrita acima. Obviamente você pode modificar isso. Note que usando a convenção `PSR-4` quando você criar um documento com o `namespace` adequado poderá usá-lo de forma transparente. Entraremos em mais detalhes sobre isso na seção de composição de estruturas.
+
+## /storage
+Como forma de indicar um caminho inicial sugerimos essa pasta chamada `storage` na raiz do projeto para a manutenção de documentos que não podem ficar abertos ao acesso público.
+
+## /vendor
+A pasta `vendor` é criada automaticamente pelo `Composer`. Ela tem as dependências que seu projeto irá e as configurações de carregamentos de arquivos. Ela está por padrão configurada no arquivo `.gitignore` para ser ignorada pelo `Git`
+
+## Iniciando os Trabalhos
 ### Criando rotas
 
 A configuração de qual a primeira rota (ou quais as primeiras rotas) será chamada fica por padrão dentro de `app/configs/route.php`.

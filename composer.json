@@ -18,7 +18,14 @@
       "App\\": "app/src/"
     }
   },
+  "config": {
+    "timeout": 86400
+  },
   "scripts": {
-    "serve": "php -S localhost:8080 -t public/"
+    "env:init" :"cp .env.sample .env",
+    "docker:init" :"cp docker-compose.yml.sample docker-compose.yml",
+    "docker:serve" :"docker-compose up",
+    "php:8080": "php -S localhost:8080 -t public/",
+    "php:serve": "@composer run php:8080 --timeout=0"
   }
 }
