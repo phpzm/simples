@@ -1,13 +1,16 @@
 # Simples
 
-Imagine ter uma estrutura de projeto simples e intuitiva com apenas um comando.. Com Simples isso é possível. Se você tem um projeto pequeno, com poucas necessidades e poucos recursos pode simplesmente usar:
+O Simples é um projeto que reúne um conjunto de pacotes para trabalhar com PHP de forma rápida e minimalista. Menos é mais!
+
+## Instalação
+Para começar a usar o simples você pode usar o comando:
 ```
 $ composer create-project phpzm/simples
 ```
-ou
+ou fazer uma cópia da branch master do repositório
 ```
-$ git clone https://github.com/phpzm/simples.git {dir}
-$ cd {dir}
+$ git clone https://github.com/phpzm/simples.git <dir>
+$ cd <dir>
 $ rm .git
 $ composer install
 ```
