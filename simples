@@ -13,4 +13,4 @@ if (!$service) {
 
 $app = new App(['root' => __DIR__]);
 
-$app->cli($service);
+$app->cli([$service]);
