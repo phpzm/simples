@@ -11,10 +11,32 @@ $ cd {dir}
 $ rm .git
 $ composer install
 ```
-E sair usando feliz da vida recursos básicos para um desenvolver um site ou sistema em PHP
 
-# Rotas
-## Criando rotas
+Neste momento você já tem baixada uma arquiretura básica e é preciso configurar alguns detalhes para sair usando feliz da vida recursos básicos para um desenvolver um site ou sistema em PHP.
+
+## Configurações do Ambiente
+
+As duas configurações que são disponibilizadas como base são direcionadas para a mesma url: `http://localhost:8080`
+
+### Docker
+
+Cria uma cópia do arquivo de exemplo que é disponibilizado junto com o projeto
+```
+$ cp docker-compose.yml.sample docker-compose.yml
+$ docker-compose up
+```
+
+### Built-in Server
+
+Para utilizar o o servidor de desenvolvimento que vem junto com o PHP utilize os comandos abaixo
+```
+$ composer run serve
+```
+
+Se deu tudo certo, ao acessar a url `http://localhost:8080` você já verá nossa página padrão de apresentação
+
+## Configurações Básicas
+### Criando rotas
 
 A configuração de qual a primeira rota (ou quais as primeiras rotas) será chamada fica por padrão dentro de `app/configs/route.php`.
 
