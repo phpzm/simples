@@ -1,17 +1,20 @@
 #!/usr/bin/php -q
 <?php
 
-require_once 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Simples\Kernel\App;
 
-unset($argv[0]);
-$service = $argv;
+$service = argv($argv);
 
-if (empty($service)) {
+if (!$service) {
     $service = ['help'];
 }
 
-$app = new App(['root' => __DIR__]);
+$options = [
+    'root' => __DIR__
+];
+
+$app = new App($options);
 
 $app->cli($service);
