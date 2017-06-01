@@ -5,9 +5,10 @@ require_once 'vendor/autoload.php';
 
 use Simples\Kernel\App;
 
-$service = argv($argv);
+unset($argv[0]);
+$service = $argv;
 
-if (!$service) {
+if (empty($service)) {
     $service = ['help'];
 }
 
