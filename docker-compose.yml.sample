@@ -11,10 +11,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=simples
-      - MYSQL_DATABASE=simples
-      - MYSQL_USER=simples
-      - MYSQL_PASSWORD=simples
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=database
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
 
   simples.apache:
     image: ambientum/php:7.0-apache
